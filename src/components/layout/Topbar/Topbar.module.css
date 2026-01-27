@@ -1,0 +1,10 @@
+.topbar {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+}

@@ -7,23 +7,39 @@ body {
     height: 100%;
 }
 
+:root {
+    --bg: #0b1020;
+    --text: rgba(255, 255, 255, 0.92);
+    --border: rgba(255, 255, 255, 0.08);
+    --accent: #2f6bff;
+}
+
 body {
     margin: 0;
     font-family:
+        'Inter',
         system-ui,
         -apple-system,
         Segoe UI,
         Roboto,
         Arial,
         sans-serif;
-    background: #fafafa;
-    color: #111;
+    color: var(--text);
+    background:
+        radial-gradient(
+            1200px 600px at 60% 80%,
+            rgba(47, 107, 255, 0.18),
+            transparent 60%
+        ),
+        radial-gradient(
+            900px 500px at 30% 30%,
+            rgba(255, 255, 255, 0.06),
+            transparent 60%
+        ),
+        var(--bg);
 }
 
 a {
     color: inherit;
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
 }

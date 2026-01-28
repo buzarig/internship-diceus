@@ -1,0 +1,60 @@
+{
+    "workQueueTabs": ["New", "In Progress", "Completed"],
+    "workQueueRows": [
+        {
+            "id": "wq-101",
+            "title": "Review policy update",
+            "account": "Acme Corp",
+            "owner": "Alex",
+            "status": "New",
+            "priority": "High"
+        },
+        {
+            "id": "wq-102",
+            "title": "Renewal follow-up",
+            "account": "Globex",
+            "owner": "Kate",
+            "status": "In Progress",
+            "priority": "Medium"
+        },
+        {
+            "id": "wq-103",
+            "title": "Send documents",
+            "account": "Initech",
+            "owner": "Sam",
+            "status": "Completed",
+            "priority": "Low"
+        }
+    ],
+    "marketNews": [
+        { "id": "n-1", "title": "Insurance market update", "time": "2h ago" },
+        {
+            "id": "n-2",
+            "title": "New compliance requirements",
+            "time": "1d ago"
+        }
+    ],
+    "accounts": [
+        {
+            "id": "a1",
+            "name": "Acme Corp",
+            "triage": "High",
+            "status": "At Risk",
+            "owner": "Alex"
+        },
+        {
+            "id": "a2",
+            "name": "Globex",
+            "triage": "Medium",
+            "status": "Healthy",
+            "owner": "Kate"
+        },
+        {
+            "id": "a3",
+            "name": "Initech",
+            "triage": "Low",
+            "status": "Needs Review",
+            "owner": "Sam"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+.tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text);
+    padding: 8px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font: inherit;
+}
+
+.active {
+    background: rgba(47, 107, 255, 0.2);
+    border-color: rgba(47, 107, 255, 0.35);
+    font-weight: 600;
+}

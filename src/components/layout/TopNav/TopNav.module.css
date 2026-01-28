@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text);
+    font-size: 14px;
+}
+
+.pill:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.active {
+    background: var(--accent);
+    border-color: transparent;
+    color: #fff;
+}

@@ -1,24 +1,19 @@
 import styles from './Topbar.module.css';
-import TopNav from '../TopNav/TopNav.jsx';
 
-export default function Topbar({ title }) {
+export default function Topbar() {
     return (
         <header className={styles.topbar}>
-            <div className={styles.row}>
-                <div>
-                    <div className={styles.big}>
-                        Hi Arthur, welcome! You have 12 open tasks.
-                    </div>
-                    <div className={styles.small}>{title}</div>
+            <div className={styles.inner}>
+                <div className={styles.title}>
+                    Hi Arthur, welcome! You have{' '}
+                    <span className={styles.em}>8</span> open tasks.
                 </div>
 
-                <div className={styles.actions}>
+                <div className={styles.right}>
                     <input className={styles.search} placeholder="Search" />
                     <div className={styles.avatar}>AR</div>
                 </div>
             </div>
-
-            <TopNav />
         </header>
     );
 }

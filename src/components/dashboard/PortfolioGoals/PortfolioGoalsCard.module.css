@@ -1,0 +1,111 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.label {
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.target {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.segBar {
+    height: 14px;
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.seg {
+    height: 100%;
+}
+
+.green {
+    background: #30c48d;
+}
+.yellow {
+    background: #f5c542;
+}
+.red {
+    background: #d11b1b;
+}
+
+.metaRow {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 16px;
+}
+
+.valueCenter {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.delta {
+    position: absolute;
+    left: 0;
+    font-size: 11px;
+    color: #30c48d;
+    opacity: 0.9;
+}
+
+.rangeRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valueChip {
+    background: rgba(47, 124, 246, 0.18);
+    border: 1px solid rgba(47, 124, 246, 0.35);
+    color: rgba(255, 255, 255, 0.92);
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-size: 11px;
+}
+
+.rangeMax {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.progress {
+    height: 12px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: rgba(47, 124, 246, 0.7);
+}
+
+.pct {
+    font-size: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}

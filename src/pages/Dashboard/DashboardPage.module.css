@@ -1,0 +1,61 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.topGrid {
+    display: grid;
+
+    /* 3 колонки как на макете */
+    grid-template-columns: 2.8fr 0.85fr 0.85fr;
+
+    /* 2 строки: справа Quick сверху, Market снизу */
+    grid-template-rows: 1fr 1fr;
+
+    gap: 16px;
+    align-items: stretch;
+}
+
+/* WorkQueue высокий = 2 строки */
+.workQueue {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+/* PortfolioGoals высокий = 2 строки (между WorkQueue и правым стеком) */
+.portfolioGoals {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+/* Правый столбец: Quick сверху, Market снизу */
+.quickActions {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.marketIntel {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.myAccounts {
+    width: 100%;
+}
+
+/* tablet: все в одну колонку */
+@media (max-width: 1024px) {
+    .topGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+
+    .workQueue,
+    .portfolioGoals,
+    .quickActions,
+    .marketIntel {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}

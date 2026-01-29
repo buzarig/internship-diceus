@@ -1,0 +1,142 @@
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.tab {
+    border: none;
+    background: rgba(12, 15, 23, 1); /* темнее */
+    color: rgba(255, 255, 255, 0.82);
+    padding: 6px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.tabActive {
+    background: #2f7cf6;
+    border-color: rgba(47, 124, 246, 0.6);
+    color: #fff;
+}
+
+.tab:hover {
+    filter: brightness(1.06);
+}
+
+.count {
+    opacity: 0.9;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1.1fr 1.3fr 1.2fr 0.9fr 0.7fr 36px;
+    align-items: center;
+    padding: 12px 8px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.head {
+    border-top: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(37, 42, 61, 0.4);
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.originator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: rgba(47, 124, 246, 0.18);
+    border: 1px solid rgba(47, 124, 246, 0.35);
+    font-size: 12px;
+}
+
+.name {
+    font-size: 13px;
+}
+
+.clientName {
+    font-size: 13px;
+}
+
+.clientSub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.type {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.blue {
+    background: #2f7cf6;
+}
+.yellow {
+    background: #f5c542;
+}
+.green {
+    background: #30c48d;
+}
+.gray {
+    background: #9ca3af;
+}
+
+.created {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moreBtn {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 2px solid rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.row:not(.head):nth-child(odd) {
+    background: rgba(255, 255, 255, 0.035);
+}

@@ -1,17 +1,18 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import DashboardPage from '../pages/DashboardPage/DashboardPage.jsx';
-import AccountsPage from '../pages/AccountsPage/AccountsPage.jsx';
-import AccountPage from '../pages/AccountPage/AccountPage.jsx';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Shell from '../components/layout/Shell/Shell.jsx';
+import DashboardPage from '../pages/Dashboard/DashboardPage.jsx';
 
-export function App() {
+export default function App() {
     return (
-        <BrowserRouter>
+        <Shell>
             <Routes>
-                <Route path="/" element={<DashboardPage />} />
-                <Route path="/accounts" element={<AccountsPage />} />
-                <Route path="/account/:id" element={<AccountPage />} />
-                <Route path="*" element={<Navigate to="/" replace />} />
+                <Route
+                    path="/"
+                    element={<Navigate to="/dashboard" replace />}
+                />
+                <Route path="/dashboard" element={<DashboardPage />} />
+                {/* account додамо потім */}
             </Routes>
-        </BrowserRouter>
+        </Shell>
     );
 }

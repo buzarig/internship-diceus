@@ -1,11 +1,13 @@
 import styles from './Shell.module.css';
 import Topbar from '../Topbar/Topbar.jsx';
+import TopNav from '../TopNav/TopNav.jsx';
 
-export default function Shell({ title, children }) {
+export default function Shell({ children }) {
     return (
         <div className={styles.shell}>
-            <Topbar title={title} />
-            <div className={styles.container}>{children}</div>
+            <Topbar />
+            <TopNav active="Dashboard" />
+            <main className={styles.content}>{children}</main>
         </div>
     );
 }

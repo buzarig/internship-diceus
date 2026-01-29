@@ -2,14 +2,8 @@
     min-height: 100vh;
 }
 
-.container {
-    max-width: 1220px;
+.content {
+    padding: 18px 22px 28px;
+    max-width: 1440px; /* под макет */
     margin: 0 auto;
-    padding: 18px 20px 40px;
-}
-
-@media (max-width: 1024px) {
-    .container {
-        padding: 14px 14px 32px;
-    }
 }

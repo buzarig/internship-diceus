@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+
+    background: #2f7cf6;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* текст по центру как ты просил */
+}

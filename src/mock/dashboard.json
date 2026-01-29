@@ -1,60 +1,227 @@
 {
-    "workQueueTabs": ["New", "In Progress", "Completed"],
+    "workQueueTabs": [
+        { "key": "assigned", "label": "Assigned to me" },
+        { "key": "pending", "label": "Pending Review" },
+        { "key": "referrals", "label": "Referrals" }
+    ],
+
     "workQueueRows": [
         {
-            "id": "wq-101",
-            "title": "Review policy update",
-            "account": "Acme Corp",
-            "owner": "Alex",
+            "id": "wq-1",
+            "tab": "assigned",
+            "originatorInitials": "SM",
+            "originatorName": "Sam Masters",
+            "clientName": "NAMEX Tech Solutions",
+            "clientSub": "Cyber Liability",
+            "type": "Underwriter Referral",
             "status": "New",
-            "priority": "High"
+            "created": "04/16/2025"
         },
         {
-            "id": "wq-102",
-            "title": "Renewal follow-up",
-            "account": "Globex",
-            "owner": "Kate",
-            "status": "In Progress",
-            "priority": "Medium"
+            "id": "wq-2",
+            "tab": "assigned",
+            "originatorInitials": "AW",
+            "originatorName": "Annalise Willis",
+            "clientName": "Maritime Logistics Corp",
+            "clientSub": "Marine Cargo",
+            "type": "Underwriter Referral",
+            "status": "New",
+            "created": "04/20/2025"
         },
         {
-            "id": "wq-103",
-            "title": "Send documents",
-            "account": "Initech",
-            "owner": "Sam",
+            "id": "wq-3",
+            "tab": "assigned",
+            "originatorInitials": "PD",
+            "originatorName": "Patrick Devenport",
+            "clientName": "GreenField Energy Ltd",
+            "clientSub": "Environmental",
+            "type": "Loss Control Request",
+            "status": "New",
+            "created": "04/16/2025"
+        },
+        {
+            "id": "wq-4",
+            "tab": "pending",
+            "originatorInitials": "AK",
+            "originatorName": "Ana Killian",
+            "clientName": "NorthStar Financial Group",
+            "clientSub": "D&O Liability",
+            "type": "Underwriter Referral",
+            "status": "Pending Review",
+            "created": "04/22/2025"
+        },
+        {
+            "id": "wq-5",
+            "tab": "pending",
+            "originatorInitials": "AK",
+            "originatorName": "Ana Killian",
+            "clientName": "Alliance Healthcare Systems",
+            "clientSub": "Medical Malpractice",
+            "type": "Email",
+            "status": "Pending Review",
+            "created": "04/28/2025"
+        },
+        {
+            "id": "wq-6",
+            "tab": "referrals",
+            "originatorInitials": "MK",
+            "originatorName": "Me",
+            "clientName": "QuantumTech Industries",
+            "clientSub": "Product Liability",
+            "type": "Underwriter Referral",
             "status": "Completed",
-            "priority": "Low"
-        }
-    ],
-    "marketNews": [
-        { "id": "n-1", "title": "Insurance market update", "time": "2h ago" },
-        {
-            "id": "n-2",
-            "title": "New compliance requirements",
-            "time": "1d ago"
-        }
-    ],
-    "accounts": [
-        {
-            "id": "a1",
-            "name": "Acme Corp",
-            "triage": "High",
-            "status": "At Risk",
-            "owner": "Alex"
+            "created": "04/20/2025"
         },
         {
-            "id": "a2",
-            "name": "Globex",
-            "triage": "Medium",
-            "status": "Healthy",
-            "owner": "Kate"
+            "id": "wq-7",
+            "tab": "referrals",
+            "originatorInitials": "SM",
+            "originatorName": "Sam Masters",
+            "clientName": "BluePeak Manufacturing",
+            "clientSub": "General Liability",
+            "type": "Underwriter Referral",
+            "status": "Completed",
+            "created": "04/26/2025"
         },
         {
-            "id": "a3",
-            "name": "Initech",
-            "triage": "Low",
-            "status": "Needs Review",
-            "owner": "Sam"
+            "id": "wq-8",
+            "tab": "referrals",
+            "originatorInitials": "AW",
+            "originatorName": "Annalise Willis",
+            "clientName": "Orion Data Systems",
+            "clientSub": "Tech E&O",
+            "type": "Underwriter Referral",
+            "status": "Completed",
+            "created": "04/30/2025"
+        }
+    ],
+
+    "portfolioGoals": [
+        {
+            "id": "pg-1",
+            "title": "Portfolio loss ratio target",
+            "targetText": "TG:55%",
+            "valuePct": 48.2,
+            "deltaPct": -6.8,
+            "deltaLabel": "GOOD",
+            "segments": [
+                { "pct": 60, "color": "green" },
+                { "pct": 25, "color": "yellow" },
+                { "pct": 15, "color": "red" }
+            ]
+        },
+        {
+            "id": "pg-2",
+            "title": "Renewal retention",
+            "targetText": "TG:85-90%",
+            "valuePct": 88,
+            "deltaPct": 0,
+            "deltaLabel": "ON TARGET",
+            "segments": [
+                { "pct": 20, "color": "red" },
+                { "pct": 80, "color": "yellow" }
+            ]
+        },
+        {
+            "id": "pg-3",
+            "title": "New business target",
+            "targetText": "",
+            "valueText": "$8.1M",
+            "rangeMax": "$12M",
+            "progressPct": 67
+        },
+        {
+            "id": "pg-4",
+            "title": "Annual GWP target",
+            "targetText": "",
+            "valueText": "$28.4M",
+            "rangeMax": "$42M",
+            "progressPct": 68
+        }
+    ],
+    "quickActions": [
+        "New Submission",
+        "Quote Builder",
+        "Risks Models",
+        "Documents Upload"
+    ],
+    "marketIntel": [
+        {
+            "id": "mi-1",
+            "color": "red",
+            "text": "Rate hardening in Cyber market - +15% YoY"
+        },
+        {
+            "id": "mi-2",
+            "color": "yellow",
+            "text": "New capacity entering Marine market"
+        },
+        {
+            "id": "mi-3",
+            "color": "blue",
+            "text": "Environmental regulatory changes in CA"
+        }
+    ],
+    "myAccounts": [
+        {
+            "id": "a-1",
+            "accountName": "NAMEX Tech Solutions",
+            "accountType": "Large Enterprise",
+            "line": "D&O Liability",
+            "broker": "Willis Towers",
+            "renewalDate": "04/16/2025",
+            "premium": "$2.3M",
+            "ratedPremium": "$2.8M",
+            "lossRatio": 32,
+            "appetite": "HIGH",
+            "status": "Active",
+            "triage": 180,
+            "winnability": { "level": "Very Strong", "dots": 4 }
+        },
+        {
+            "id": "a-2",
+            "accountName": "Alliance Healthcare Systems",
+            "accountType": "Mid-Market",
+            "line": "Medical Malpractice",
+            "broker": "Aon Risk",
+            "renewalDate": "06/30/2025",
+            "premium": "$1.7M",
+            "ratedPremium": "$1.9M",
+            "lossRatio": 38,
+            "appetite": "MEDIUM",
+            "status": "Under review",
+            "triage": 165,
+            "winnability": { "level": "Strong", "dots": 3 }
+        },
+        {
+            "id": "a-3",
+            "accountName": "Maritime Logistics Corp",
+            "accountType": "Shipping/Logistics",
+            "line": "Marine Cargo",
+            "broker": "Marsh McLennan",
+            "renewalDate": "09/05/2025",
+            "premium": "$875K",
+            "ratedPremium": "$920K",
+            "lossRatio": 25,
+            "appetite": "HIGH",
+            "status": "Active",
+            "triage": 182,
+            "winnability": { "level": "Very Strong", "dots": 4 }
+        },
+        {
+            "id": "a-4",
+            "accountName": "GreenField Energy Ltd",
+            "accountType": "Energy Sector",
+            "line": "Environmental Liability",
+            "broker": "Aon Risk",
+            "renewalDate": "07/22/2025",
+            "premium": "$1.2M",
+            "ratedPremium": "$1.4M",
+            "lossRatio": 67,
+            "appetite": "CAUTIOUS",
+            "status": "Under review",
+            "triage": 158,
+            "winnability": { "level": "Medium", "dots": 2 }
         }
     ]
 }

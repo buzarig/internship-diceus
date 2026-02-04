@@ -1,16 +1,84 @@
-# React + Vite
+# Account Management Dashboard – Test Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend test assignment that implements an **Account Management Dashboard** based on the provided design and requirements.  
+The main goal was to reproduce the UI as accurately as possible, build a clean component-based architecture, and demonstrate the ability to work with structured mock data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Brief Description
 
-## React Compiler
+### Technologies Used
+- **React** (Vite)
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS Modules**
+- **Modern CSS** (Flexbox, CSS Grid, responsive units)
+- **Static mock data (JSON)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+All UI components were implemented manually without using third-party UI libraries.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### AI Tools Used
+- **ChatGPT (GPT-4)** — used for:
+  - Component architecture planning
+  - Layout and CSS troubleshooting
+  - Refactoring and optimization suggestions
+  - Mock data structuring
+
+No Figma-to-code or automatic UI generation tools (such as Anima or similar) were used.  
+The interface was built manually based on the provided design.
+
+---
+
+## Project Structure
+
+The project follows a modular and scalable structure:
+
+- `components/` — page sections and feature components
+- `ui/` — reusable UI elements (Card, buttons, etc.)
+- `layouts/` — shared layout components (Shell, Topbar, TopNav)
+- `mocks/` — centralized mock data
+- `assets/` — images and icons
+
+Each page section is implemented as an independent, reusable component.
+
+---
+
+## Layout & Navigation
+
+- Shared **Shell layout** is used across all pages
+- Common **Topbar** and **Top Navigation** reused between Dashboard and Account pages
+- Active navigation state is controlled via props
+- Breadcrumbs are rendered dynamically from mock data
+
+---
+
+## Data Handling
+
+- The application uses **static mock data** instead of a backend
+- Data is passed to components via props
+- Components are not hardcoded and are ready for API integration
+- Mock data structure is centralized and easy to extend
+
+---
+
+## Responsive Design
+
+- Desktop-first approach
+- Tablet responsiveness implemented via media queries
+- Flexible sizing using `fr`, `clamp()`, and content-based layouts
+- No hardcoded pixel values for key layout elements
+
+---
+
+## Notes
+
+- Backend, authentication, and routing were not required for this task
+- No external UI frameworks were used intentionally
+- Focus was placed on clean code, readability, and scalability
+- The project is prepared for future extension (API integration, state management)
+
+---
+
+Thank you for reviewing this test assignment.

@@ -1,0 +1,16 @@
+.breadcrumbs {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    display: flex;
+    align-items: start;
+}
+.sep {
+    margin: 0 6px;
+    color: rgb(255, 255, 255);
+}
+.item {
+    color: rgb(255, 255, 255);
+}
+.active {
+    color: rgba(47, 124, 246, 0.95);
+}

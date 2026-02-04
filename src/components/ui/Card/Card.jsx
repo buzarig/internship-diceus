@@ -1,9 +1,15 @@
 import styles from './Card.module.css';
 
-export default function Card({ title, right, children, variant = 'light' }) {
+export default function Card({
+    title,
+    right,
+    children,
+    variant = 'light',
+    padding = 'md',
+}) {
     return (
         <div
-            className={`${styles.card} ${variant === 'dark' ? styles.dark : ''}`}
+            className={`${styles.card} ${variant === 'dark' ? styles.dark : ''} ${styles[padding]}`}
         >
             {(title || right) && (
                 <div className={styles.header}>

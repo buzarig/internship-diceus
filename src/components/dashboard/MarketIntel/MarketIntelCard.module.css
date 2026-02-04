@@ -39,3 +39,9 @@
     font-size: 13px;
     line-height: 1.35;
 }
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 13px;
+    }
+}

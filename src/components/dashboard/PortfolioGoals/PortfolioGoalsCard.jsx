@@ -26,7 +26,7 @@ function ProgressBar({ pct }) {
 
 export default function PortfolioGoalsCard() {
     return (
-        <Card title="Portfolio goals" variant="dark">
+        <Card padding="md" title="Portfolio goals" variant="dark">
             <div className={styles.list}>
                 {data.portfolioGoals.map((g) => {
                     const isSegmented = Array.isArray(g.segments);

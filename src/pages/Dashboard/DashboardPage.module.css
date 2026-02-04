@@ -45,10 +45,19 @@
 }
 
 /* tablet: все в одну колонку */
+@media (max-width: 1280px) {
+    .topGrid {
+        grid-template-columns: 2.2fr 1fr 1fr; /* чуть ужимаем левую колонку */
+        gap: 14px;
+    }
+}
+
+/* ===== <=1024 (tablet) ===== */
 @media (max-width: 1024px) {
     .topGrid {
         grid-template-columns: 1fr;
-        grid-template-rows: none;
+        grid-template-rows: auto;
+        gap: 14px;
     }
 
     .workQueue,
@@ -57,5 +66,38 @@
     .marketIntel {
         grid-column: 1;
         grid-row: auto;
+    }
+
+    .myAccounts {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page {
+        gap: 12px;
+    }
+
+    .topGrid {
+        gap: 12px;
+    }
+
+    .workQueue {
+        min-width: 720px;
+    }
+}
+
+/* ===== <=768 (mobile) ===== */
+@media (max-width: 768px) {
+    .page {
+        gap: 12px;
+    }
+
+    .topGrid {
+        gap: 12px;
+    }
+
+    .workQueue {
+        min-width: 600px;
     }
 }

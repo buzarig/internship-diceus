@@ -1,0 +1,335 @@
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.headerTitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    margin-right: 6px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search {
+    width: 220px;
+    max-width: 40vw;
+}
+
+.searchInput {
+    width: 100%;
+    height: 30px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.92);
+    padding: 0 12px;
+    outline: none;
+    font-size: 13px;
+}
+
+.searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.chipBtn {
+    height: 30px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(47, 124, 246, 0.55);
+    background: rgba(47, 124, 246, 0.14);
+    color: rgba(47, 124, 246, 0.95);
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+}
+
+/* ===== TABLE ===== */
+.table {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.tableWrapper {
+    width: 100%;
+}
+
+/* grid columns под Policies */
+.row {
+    display: grid;
+    grid-template-columns:
+        160px /* line */
+        95px /* eff */
+        95px /* exp */
+        110px /* status */
+        120px /* exp tech */
+        135px /* exp premium */
+        130px /* renewal to tech */
+        120px /* renewal tech */
+        135px /* renewal premium */
+        95px /* rate change */
+        95px /* loss ratio */
+        44px; /* more */
+
+    align-items: center;
+    padding: 12px 8px;
+    color: rgba(255, 255, 255, 0.92);
+    min-width: 1280px;
+}
+
+.row > div {
+    min-width: 0;
+    text-align: left;
+}
+
+.head {
+    border-top: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(37, 42, 61, 0.4);
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.row:not(.head):nth-child(odd) {
+    background: rgba(255, 255, 255, 0.035);
+}
+
+/* ===== LINE CELL ===== */
+.lineCell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.lineText {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    text-align: left;
+}
+
+.lineTitle {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lineSub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.45);
+    text-align: left;
+}
+
+.lineIcon {
+    width: 18px;
+    height: 18px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex: 0 0 auto;
+}
+
+.iconBlue {
+    background: rgba(47, 124, 246, 0.18);
+    border: 1px solid rgba(47, 124, 246, 0.45);
+    color: rgba(120, 175, 255, 0.95);
+}
+
+.iconGreen {
+    background: rgba(48, 196, 141, 0.16);
+    border: 1px solid rgba(48, 196, 141, 0.35);
+    color: rgba(168, 255, 216, 0.9);
+}
+
+.iconPurple {
+    background: rgba(139, 92, 246, 0.14);
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    color: rgba(196, 165, 250, 0.95);
+}
+
+.iconRed {
+    background: rgba(239, 68, 68, 0.14);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: rgba(255, 170, 170, 0.95);
+}
+
+/* ===== TEXT COLORS ===== */
+.muted {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.strong {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* ===== STATUS ===== */
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+}
+
+.dotGreen {
+    background: #30c48d;
+}
+.dotYellow {
+    background: #f5c542;
+}
+.dotGray {
+    background: #9ca3af;
+}
+
+/* ===== RATE ===== */
+.rateRed {
+    color: #ef4444;
+    font-weight: 600;
+}
+.rateGreen {
+    color: #30c48d;
+    font-weight: 600;
+}
+
+/* ===== LOSS RATIO ===== */
+.loss {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lossPill {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 54px;
+}
+
+.lossGreen {
+    background: rgba(48, 196, 141, 1);
+    border-color: rgba(48, 196, 141, 1);
+}
+
+.lossYellow {
+    background: rgba(245, 197, 66, 1);
+    border-color: rgba(245, 197, 66, 1);
+    color: black;
+}
+
+.lossRed {
+    background: rgba(239, 68, 68, 1);
+    border-color: rgba(239, 68, 68, 1);
+}
+
+.lossNA {
+    background: rgba(156, 163, 175, 0.1);
+    border-color: rgba(156, 163, 175, 0.22);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ===== MORE ===== */
+.more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moreBtn {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 2px solid rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* ===== TOTAL ===== */
+.total {
+    background: rgba(255, 255, 255, 0.02);
+    text-align: right;
+}
+
+.totalLabel {
+    text-align: center !important;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: rgb(255, 255, 255);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1280px) {
+    .search {
+        width: 180px;
+    }
+
+    .table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+    }
+
+    .row {
+        min-width: 1280px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .headerTitle {
+        width: 100%;
+    }
+
+    .controls {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .search {
+        width: min(320px, 100%);
+    }
+
+    .chipBtn {
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .row {
+        min-width: 1360px;
+    }
+}

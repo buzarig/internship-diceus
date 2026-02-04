@@ -7,3 +7,15 @@
     max-width: 1440px; /* под макет */
     margin: 0 auto;
 }
+
+@media (max-width: 1280px) {
+    .content {
+        padding: 16px 18px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 14px 14px 22px;
+    }
+}

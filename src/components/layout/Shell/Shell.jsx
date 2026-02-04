@@ -6,7 +6,7 @@ export default function Shell({ children }) {
     return (
         <div className={styles.shell}>
             <Topbar />
-            <TopNav active="Dashboard" />
+            <TopNav />
             <main className={styles.content}>{children}</main>
         </div>
     );

@@ -140,3 +140,26 @@
 .row:not(.head):nth-child(odd) {
     background: rgba(255, 255, 255, 0.035);
 }
+
+@media (max-width: 1024px) {
+    .tabs {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+    }
+
+    .row {
+        min-width: 760px; /* чтобы колонки не ломались */
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        min-width: 720px;
+    }
+}

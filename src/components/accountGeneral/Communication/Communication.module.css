@@ -1,0 +1,271 @@
+/* =========================================================
+   PANEL (общий фон секции)
+   ========================================================= */
+.panel {
+    width: 100%;
+    padding: 16px;
+    border-radius: 18px;
+
+    background: rgba(18, 24, 38, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================================
+   TOP CONTROLS
+   ========================================================= */
+.top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.search {
+    width: 180px;
+    height: 26px;
+    padding: 0 12px;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 12px;
+    outline: none;
+}
+
+.search::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.topBtn {
+    height: 26px;
+    padding: 0 14px;
+    border-radius: 999px;
+
+    background: transparent;
+    border: 1px solid rgba(47, 124, 246, 0.55);
+    color: rgba(47, 124, 246, 0.95);
+
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.topBtn:hover {
+    background: rgba(47, 124, 246, 0.1);
+}
+
+/* =========================================================
+   GRID / COLUMNS
+   ========================================================= */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
+
+    min-height: 420px; /* создаёт пустоту снизу, как в макете */
+    align-items: start;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+
+/* разное “воздух снизу” */
+.col:first-child {
+    padding-bottom: 18px;
+}
+
+.col:last-child {
+    padding-bottom: 46px;
+}
+
+/* =========================================================
+   MESSAGE CARD
+   ========================================================= */
+.card {
+    width: 100%;
+    padding: 16px 16px 14px;
+    border-radius: 18px;
+
+    background: rgba(28, 36, 54, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* подсветка левых карточек */
+.cardHighlighted {
+    min-height: 190px;
+    border: 1px solid rgba(47, 124, 246, 0.85);
+    box-shadow: inset 0 0 0 1px rgba(47, 124, 246, 0.2);
+}
+
+/* компактная правая верхняя */
+.cardCompact {
+    min-height: 140px;
+}
+
+/* правая нижняя */
+.col:nth-child(2) .card:not(.cardCompact) {
+    min-height: 170px;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.92);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meta {
+    margin-top: 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.text {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.62);
+
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cardCompact .text {
+    line-clamp: 2;
+}
+
+.cardCompact .meta,
+.cardCompact .text {
+    text-align: center;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer {
+    margin-top: auto; /* прижимает вниз */
+    padding-top: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* =========================================================
+   PILLS
+   ========================================================= */
+.pill {
+    height: 20px;
+    padding: 0 10px;
+    border-radius: 999px;
+
+    display: inline-flex;
+    align-items: center;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.pillNew {
+    background: rgba(47, 124, 246, 0.2);
+    border: 1px solid rgba(47, 124, 246, 0.55);
+    color: rgba(120, 175, 255, 0.95);
+}
+
+.pillResponded {
+    background: rgba(47, 124, 246, 0.16);
+    border: 1px solid rgba(47, 124, 246, 0.45);
+    color: rgba(120, 175, 255, 0.9);
+}
+
+/* =========================================================
+   ATTACHMENTS
+   ========================================================= */
+.attachments {
+    height: 22px;
+    padding: 0 10px;
+    border-radius: 999px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    background: rgba(46, 204, 113, 0.15);
+    border: 1px solid rgba(46, 204, 113, 0.25);
+    color: rgba(168, 255, 216, 0.85);
+    font-size: 12px;
+}
+
+.clip {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* =========================================================
+   REPLY BUTTON
+   ========================================================= */
+.reply {
+    height: 30px;
+    padding: 0 18px;
+    border-radius: 999px;
+    border: none;
+
+    cursor: pointer;
+    background: rgba(47, 124, 246, 0.95);
+    color: rgba(255, 255, 255, 0.95);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.reply:hover {
+    filter: brightness(1.05);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        min-height: unset;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .col {
+        padding-bottom: 0;
+    }
+}

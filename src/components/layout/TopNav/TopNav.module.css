@@ -89,3 +89,40 @@
 .circleBtn:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
+@media (max-width: 1024px) {
+    .inner {
+        align-items: flex-start;
+    }
+
+    .left {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 6px;
+        max-width: calc(100vw - 140px); /* оставляем место под стрелки */
+    }
+
+    .left::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .left::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 999px;
+    }
+
+    .pill {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        padding: 8px 14px 10px;
+    }
+
+    .circleBtn {
+        width: 40px;
+        height: 40px;
+    }
+}

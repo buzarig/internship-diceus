@@ -351,3 +351,59 @@ div {
     justify-content: center;
     padding-right: 12px; /* по центру */
 }
+
+@media (max-width: 1280px) {
+    .search {
+        width: 180px;
+    }
+
+    .table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+    }
+
+    .row {
+        min-width: 1380px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .headerTitle {
+        width: 100%;
+    }
+
+    .controls {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .search {
+        width: min(320px, 100%);
+    }
+
+    .chipBtn,
+    .primaryBtn {
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .row {
+        min-width: 1380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search {
+        width: 100%;
+        max-width: 100%;
+    }
+}

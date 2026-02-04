@@ -4,7 +4,7 @@ import styles from './MarketIntelCard.module.css';
 
 export default function MarketIntelCard() {
     return (
-        <Card title="Market intelligence" variant="dark">
+        <Card title="Market intelligence" variant="dark" padding="md">
             <ul className={styles.list}>
                 {data.marketIntel.map((i) => (
                     <li key={i.id} className={styles.item}>

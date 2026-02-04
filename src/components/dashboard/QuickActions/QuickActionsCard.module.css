@@ -21,3 +21,10 @@
     align-items: center;
     justify-content: center; /* текст по центру как ты просил */
 }
+
+@media (max-width: 768px) {
+    .btn {
+        height: 36px;
+        font-size: 13px;
+    }
+}

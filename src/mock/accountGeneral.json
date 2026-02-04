@@ -1,0 +1,360 @@
+{
+    "breadcrumb": ["Dashboard", "Accounts", "Maritime Logistics Corp"],
+    "account": {
+        "name": "Maritime Logistics Corp",
+        "logoUrl": "../assets/images/maritime-logo.png",
+        "address": "425 Harbor Boulevard, Suite 300\nSeattle, WA 98104",
+        "existingAccount": "54383",
+        "broker": "Marsh McLennan",
+        "underwriter": "Kate Johnson",
+        "logoText": "ML"
+    },
+    "needsAttention": {
+        "title": "Needs Attention",
+        "items": [
+            {
+                "title": "Marine Survey Required",
+                "sub1": "Scheduled for 06/18/2025",
+                "link": "Review details link →"
+            },
+            {
+                "title": "Loss Control Complete",
+                "sub1": "Last inspection: 02/15/2025",
+                "link": "View report →"
+            },
+            {
+                "title": "Claims Review Required",
+                "sub1": "3 open claims  /  $245,000 TTL",
+                "link": "View claims →"
+            }
+        ]
+    },
+    "defaultMetrics": {
+        "winnability": {
+            "title": "Winnability",
+            "scoreLabel": "Very Strong",
+            "dots": 4,
+            "link": "See all factors →"
+        },
+        "lossRatio": {
+            "title": "Loss Ratio",
+            "value": "25%",
+            "sub": "vs 42% target",
+            "link": "View history →"
+        },
+        "premiumGrowth": {
+            "title": "Premium Growth",
+            "value": "12.4%",
+            "sub": "YoY increase",
+            "foot": "$123M vs $150M Target",
+            "link": "View trend →"
+        },
+        "exposure": {
+            "title": "Exposure Distribution",
+            "bars": [
+                {
+                    "label": "Marine Cargo",
+                    "value": 71.4
+                },
+                {
+                    "label": "General Liability",
+                    "value": 20.0
+                },
+                {
+                    "label": "Workers Comp",
+                    "value": 8.6
+                }
+            ]
+        }
+    },
+    "policiesCards": [
+        {
+            "key": "marine",
+            "icon": "ship",
+            "title": "Marine Cargo",
+            "premium": "$625,000",
+            "effDate": "6/30/2026"
+        },
+        {
+            "key": "gl",
+            "icon": "shield",
+            "title": "General Liability",
+            "premium": "$175,000",
+            "effDate": "6/30/2026"
+        },
+        {
+            "key": "wc",
+            "icon": "bolt",
+            "title": "Workers Comp",
+            "premium": "$75,000",
+            "effDate": "---"
+        },
+        {
+            "key": "prop",
+            "icon": "building",
+            "title": "Property",
+            "premium": "$64,829.83",
+            "effDate": "---"
+        },
+        {
+            "key": "umbrella",
+            "icon": "umbrella",
+            "title": "Umbrella",
+            "premium": "$275,000",
+            "effDate": "13/03/2026"
+        }
+    ],
+    "steps": [
+        {
+            "label": "Submitted",
+            "state": "done"
+        },
+        {
+            "label": "Review",
+            "state": "done"
+        },
+        {
+            "label": "Quote",
+            "state": "done"
+        },
+        {
+            "label": "Bind",
+            "state": "done"
+        },
+        {
+            "label": "Issue",
+            "state": "done"
+        },
+        {
+            "label": "Renew",
+            "state": "next"
+        }
+    ],
+    "complianceItems": [
+        "KYC verification",
+        "Required Documentation",
+        "Regulatory approval",
+        "Financial Verification"
+    ],
+
+    "accountDetails": {
+        "activeKey": "winnability",
+        "menu": [
+            {
+                "title": "Decision Support",
+                "count": 4,
+                "items": [
+                    { "key": "winnability", "label": "Winnability" },
+                    {
+                        "key": "exposure",
+                        "label": "Exposure Review & Suggested Coverage"
+                    },
+                    {
+                        "key": "portfolio",
+                        "label": "Portfolio Strategy Alignment"
+                    },
+                    { "key": "broker", "label": "Broker Analytics" }
+                ]
+            },
+            { "title": "Risk Assessment", "count": 6, "items": [] },
+            { "title": "Documents and Compliance", "count": 2, "items": [] }
+        ],
+        "winnability": {
+            "score": 82,
+            "scoreLabel": "Very Strong",
+            "dots": 4,
+            "positionBars": [
+                { "label": "Your score", "value": 82 },
+                { "label": "Market Avg", "value": 68 },
+                { "label": "Top competitor", "value": 88 }
+            ],
+            "positionLegend": [
+                { "text": "Your score: 82%" },
+                { "text": "Market Avg: 68%" },
+                { "text": "Top competitor: 88%" }
+            ],
+            "increasing": [
+                {
+                    "rank": 1,
+                    "label": "Brokers relationship",
+                    "bar": 78,
+                    "delta": "+28%"
+                },
+                {
+                    "rank": 2,
+                    "label": "Loss history",
+                    "bar": 62,
+                    "delta": "+22%"
+                },
+                {
+                    "rank": 3,
+                    "label": "Industry growth",
+                    "bar": 48,
+                    "delta": "+16%"
+                },
+                {
+                    "rank": 4,
+                    "label": "Multiline opportunity",
+                    "bar": 34,
+                    "delta": "+11%"
+                }
+            ],
+            "decreasing": [
+                {
+                    "rank": 1,
+                    "label": "Premium pricing",
+                    "bar": 74,
+                    "delta": "-24%"
+                },
+                {
+                    "rank": 2,
+                    "label": "Total exposure",
+                    "bar": 54,
+                    "delta": "-18%"
+                },
+                {
+                    "rank": 3,
+                    "label": "Loss ratio trend",
+                    "bar": 40,
+                    "delta": "-13%"
+                },
+                {
+                    "rank": 4,
+                    "label": "Market competition",
+                    "bar": 18,
+                    "delta": "-5%"
+                }
+            ],
+            "recommendations": [
+                {
+                    "title": "Offer 5% premium discount in exchange for 3-year commitment",
+                    "body": "Historical win rate increases 24% with multi-year commitments. Current pricing is 12% above market average. This approach would strengthen retention while maintaining adequate profitability."
+                },
+                {
+                    "title": "Propose risk control services for cargo handling procedures",
+                    "body": "Can potentially reduce loss ratio by 15-20% based on similar maritime accounts in your portfolio. Specific focus on loading/unloading operations would address the most frequent claim scenarios."
+                }
+            ]
+        }
+    },
+    "communication": {
+        "left": [
+            {
+                "status": "NEW",
+                "title": "Policy Renewal - Auto Insurance 5/15/25",
+                "meta": "Michael Roberts // Apr 5",
+                "preview": "Hello Arthur, I’m reaching out regarding the upcoming auto policy renewal for Real Estate Group, LLC. The current policy expires on 6/30/2024. Would you like to review coverage options before proceeding with the renewal? I’ve attached the current policy details and premium breakdown for your reference.",
+                "attachments": 3,
+                "showReply": true
+            },
+            {
+                "status": "NEW",
+                "title": "New Quote Request - Workers Comp Insurance",
+                "meta": "Sarah Chen // Apr 5",
+                "preview": "Hi Arthur, Real Estate Group has expressed interest in adding workers compensation coverage to their insurance portfolio. I’ve completed the initial risk assessment based on the information provided and included supporting documentation for your review.",
+                "attachments": 3,
+                "showReply": true
+            }
+        ],
+        "right": [
+            {
+                "status": "Responded",
+                "title": "Fwd: New Submission - BPM Real Estate - EFF 4/1/24",
+                "meta": "Joshua Dunmire // Mar 25",
+                "preview": "Arthur, attached please find our submission for the above mentioned applicant. We have included the key underwriting details and loss information for your review.",
+                "attachments": 0,
+                "showReply": false,
+                "compact": true
+            },
+            {
+                "status": null,
+                "title": "New Business: BPM Real Estate Group, LLC",
+                "meta": "Isabel Kreller // Feb 28",
+                "preview": "Hello Arthur, I am pleased to present you with a submission on this client’s upcoming renewal. Please review the attached materials and let me know if you’d like any additional information before proceeding.",
+                "attachments": 5,
+                "showReply": true
+            }
+        ]
+    },
+    "policiesTable": {
+        "rows": [
+            {
+                "id": "17303212",
+                "line": "Marine Cargo",
+                "icon": "Blue",
+                "iconText": "⚓",
+                "effDate": "6/30/2026",
+                "expDate": "6/30/2027",
+                "status": "Active",
+                "expiringTech": "$587,500",
+                "expiringPremium": "$605,000",
+                "renewalToTech": "$610,000",
+                "renewalTech": "$620,000",
+                "renewalPremium": "$625,000",
+                "rateChange": "3.3%",
+                "rateChangeColor": "green",
+                "lossRatio": 22
+            },
+            {
+                "id": "4631092",
+                "line": "General Liability",
+                "icon": "Green",
+                "iconText": "🛡",
+                "effDate": "6/30/2026",
+                "expDate": "6/30/2027",
+                "status": "Active",
+                "expiringTech": "$160,000",
+                "expiringPremium": "$165,000",
+                "renewalToTech": "$170,000",
+                "renewalTech": "$172,500",
+                "renewalPremium": "$175,000",
+                "rateChange": "6.1%",
+                "rateChangeColor": "red",
+                "lossRatio": 55
+            },
+            {
+                "id": "9182371",
+                "line": "Workers Comp",
+                "icon": "Purple",
+                "iconText": "⚙",
+                "effDate": "Pending",
+                "expDate": "Pending",
+                "status": "Pending",
+                "expiringTech": "$0",
+                "expiringPremium": "$0",
+                "renewalToTech": "$73,500",
+                "renewalTech": "$75,000",
+                "renewalPremium": "$75,000",
+                "rateChange": "N/A",
+                "rateChangeColor": null,
+                "lossRatio": null
+            },
+            {
+                "id": "5274936",
+                "line": "Umbrella",
+                "icon": "Red",
+                "iconText": "☂",
+                "effDate": "13/03/2026",
+                "expDate": "13/03/2027",
+                "status": "Active",
+                "expiringTech": "$245,000",
+                "expiringPremium": "$250,000",
+                "renewalToTech": "$267,500",
+                "renewalTech": "$270,000",
+                "renewalPremium": "$275,000",
+                "rateChange": "10.0%",
+                "rateChangeColor": "red",
+                "lossRatio": 78
+            }
+        ],
+        "total": {
+            "expiringTech": "$992,500",
+            "expiringPremium": "$1,020,000",
+            "renewalToTech": "$1,121,000",
+            "renewalTech": "$1,137,500",
+            "renewalPremium": "$1,150,000",
+            "rateChange": "6.9%",
+            "lossRatio": "58.3%"
+        }
+    }
+}

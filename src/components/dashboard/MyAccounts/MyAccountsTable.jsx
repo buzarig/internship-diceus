@@ -43,6 +43,7 @@ export default function MyAccountsTable() {
 
     return (
         <Card
+            padding="md"
             title={
                 <div className={styles.header}>
                     <div className={styles.headerTitle}>My accounts</div>
@@ -90,74 +91,80 @@ export default function MyAccountsTable() {
                     <div />
                 </div>
 
-                {filtered.map((r) => (
-                    <div key={r.id} className={styles.row}>
-                        <div className={styles.accountCell}>
-                            <div className={styles.accountName}>
-                                {r.accountName}
-                            </div>
-                            <div className={styles.accountType}>
-                                {r.accountType}
-                            </div>
-                        </div>
-
-                        <div className={styles.muted}>{r.line}</div>
-                        <div className={styles.muted}>{r.broker}</div>
-                        <div className={styles.muted}>{r.renewalDate}</div>
-
-                        <div className={styles.linkish}>{r.premium}</div>
-                        <div className={styles.muted}>{r.ratedPremium}</div>
-
-                        <div className={styles.loss}>
-                            <span
-                                className={`${styles.lossPill} ${styles[lossColor(r.lossRatio)]}`}
-                            >
-                                {r.lossRatio}%
-                            </span>
-                        </div>
-
-                        <div className={styles.cellAppetite}>
-                            <span
-                                className={`${styles.pill} ${styles.pillWide} ${styles[appetiteColor(r.appetite)]}`}
-                            >
-                                {r.appetite}
-                            </span>
-                        </div>
-
-                        <div className={styles.status}>
-                            <span
-                                className={`${styles.dot} ${styles[statusColor(r.status)]}`}
-                            />
-                            <span className={styles.muted}>{r.status}</span>
-                        </div>
-
-                        <div>
-                            <span className={styles.triage}>{r.triage}</span>
-                        </div>
-
-                        <div className={styles.cellWin}>
-                            <div className={styles.winBox}>
-                                <div
-                                    className={styles.winDots}
-                                    aria-hidden="true"
-                                >
-                                    {Array.from({ length: 4 }).map((_, i) => (
-                                        <span
-                                            key={i}
-                                            className={`${styles.winDot} ${i < r.winnability.dots ? styles.winOn : ''}`}
-                                        />
-                                    ))}
+                <div className={styles.tableWrapper}>
+                    {filtered.map((r) => (
+                        <div key={r.id} className={styles.row}>
+                            <div className={styles.accountCell}>
+                                <div className={styles.accountName}>
+                                    {r.accountName}
                                 </div>
-                                <span className={styles.winText}>
-                                    {r.winnability.level}
+                                <div className={styles.accountType}>
+                                    {r.accountType}
+                                </div>
+                            </div>
+
+                            <div className={styles.muted}>{r.line}</div>
+                            <div className={styles.muted}>{r.broker}</div>
+                            <div className={styles.muted}>{r.renewalDate}</div>
+
+                            <div className={styles.linkish}>{r.premium}</div>
+                            <div className={styles.muted}>{r.ratedPremium}</div>
+
+                            <div className={styles.loss}>
+                                <span
+                                    className={`${styles.lossPill} ${styles[lossColor(r.lossRatio)]}`}
+                                >
+                                    {r.lossRatio}%
                                 </span>
                             </div>
+
+                            <div className={styles.cellAppetite}>
+                                <span
+                                    className={`${styles.pill} ${styles.pillWide} ${styles[appetiteColor(r.appetite)]}`}
+                                >
+                                    {r.appetite}
+                                </span>
+                            </div>
+
+                            <div className={styles.status}>
+                                <span
+                                    className={`${styles.dot} ${styles[statusColor(r.status)]}`}
+                                />
+                                <span className={styles.muted}>{r.status}</span>
+                            </div>
+
+                            <div>
+                                <span className={styles.triage}>
+                                    {r.triage}
+                                </span>
+                            </div>
+
+                            <div className={styles.cellWin}>
+                                <div className={styles.winBox}>
+                                    <div
+                                        className={styles.winDots}
+                                        aria-hidden="true"
+                                    >
+                                        {Array.from({ length: 4 }).map(
+                                            (_, i) => (
+                                                <span
+                                                    key={i}
+                                                    className={`${styles.winDot} ${i < r.winnability.dots ? styles.winOn : ''}`}
+                                                />
+                                            ),
+                                        )}
+                                    </div>
+                                    <span className={styles.winText}>
+                                        {r.winnability.level}
+                                    </span>
+                                </div>
+                            </div>
+                            <div className={styles.more}>
+                                <MoreMenu />
+                            </div>
                         </div>
-                        <div className={styles.more}>
-                            <MoreMenu />
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </Card>
     );

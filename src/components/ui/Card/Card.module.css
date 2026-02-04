@@ -20,8 +20,12 @@
     color: #111827;
 }
 
-.body {
+.md .body {
     padding: 0px 16px 14px 16px;
+}
+
+.none .body {
+    padding: 0;
 }
 
 .right {

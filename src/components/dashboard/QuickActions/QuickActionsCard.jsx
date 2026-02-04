@@ -4,7 +4,7 @@ import styles from './QuickActionsCard.module.css';
 
 export default function QuickActionsCard() {
     return (
-        <Card title="Quick actions" variant="dark">
+        <Card title="Quick actions" padding="md" variant="dark">
             <div className={styles.list}>
                 {data.quickActions.map((a) => (
                     <button key={a} className={styles.btn} type="button">

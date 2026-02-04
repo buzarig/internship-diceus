@@ -109,3 +109,13 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 768px) {
+    .list {
+        gap: 12px;
+    }
+
+    .label {
+        font-size: 9px;
+    }
+}

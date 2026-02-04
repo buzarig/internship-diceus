@@ -1,0 +1,195 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    align-items: end;
+}
+
+.topRow {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 18px;
+    align-items: center;
+}
+
+.logoWrap {
+    --avatar: clamp(68px, 7vw, 102px);
+
+    width: var(--avatar);
+    height: var(--avatar);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.logoImg {
+    width: 78%;
+    height: 78%;
+    object-fit: contain;
+}
+
+.logoFallback {
+    width: 46px;
+    height: 46px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(
+        180deg,
+        rgba(30, 64, 175, 1) 0%,
+        rgba(30, 64, 175, 0.3) 100%
+    );
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 380px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: -0.02em;
+}
+
+.addrWrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.addr {
+    max-width: 190px; /* под макет */
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+}
+
+.meta {
+    display: flex;
+    align-items: flex-start;
+}
+
+.metaCol {
+    padding-right: 50px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.metaCol:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.metaCol:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.k {
+    font-size: 10px;
+    color: rgba(148, 163, 184, 1);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.v {
+    text-align: left;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+/* RIGHT: Needs Attention */
+.attnBox {
+    border: 1px solid rgba(245, 197, 66, 0.55);
+    border-radius: 14px;
+    padding: 20px 20px;
+    padding-top: 15px;
+}
+
+.attnTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(245, 197, 66, 0.95);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.attnDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(245, 197, 66, 0.75);
+}
+
+.attnGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    div {
+        text-align: left;
+    }
+}
+
+.attnItemTitle {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.attnItemSub {
+    margin-top: 3px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.attnLink {
+    margin-top: 6px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: rgba(47, 124, 246, 0.95);
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.main {
+    align-items: flex-start;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topRow {
+        grid-template-columns: 66px 1fr;
+    }
+
+    .meta {
+        grid-column: 1 / -1;
+        margin-left: 82px; /* чтобы начать под текстом рядом с лого */
+        margin-top: 8px;
+        flex-wrap: wrap;
+    }
+
+    .attnGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .addrWrapper {
+        padding-bottom: 30px;
+    }
+}

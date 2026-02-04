@@ -1,0 +1,443 @@
+.section {
+    width: 100%;
+}
+
+.shell {
+    width: 100%;
+    border-radius: 18px;
+    padding: 18px;
+    background: rgba(18, 24, 38, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+
+    display: grid;
+    grid-template-columns: 260px 1px 1fr;
+    gap: 18px;
+    align-items: stretch;
+}
+
+/* LEFT */
+.aside {
+    min-width: 0;
+}
+
+.group {
+    margin-bottom: 18px;
+}
+
+.groupHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.groupTitle {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.badge {
+    min-width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.nav {
+    display: grid;
+    gap: 6px;
+    padding-left: 2px;
+}
+
+.navItem {
+    text-align: left;
+    padding: 8px 10px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navItem:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.navItemActive {
+    color: rgba(47, 124, 246, 0.98);
+    background: rgba(47, 124, 246, 0.1);
+}
+
+/* Divider */
+.divider {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* RIGHT */
+.content {
+    min-width: 0;
+}
+
+.pageTitleRow {
+    margin-bottom: 12px;
+}
+
+.pageTitle {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Top grid */
+.topGrid {
+    display: grid;
+    grid-template-columns: 260px 260px 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.smallCard {
+    border-radius: 16px;
+    padding: 14px;
+    background: rgba(28, 36, 54, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    min-width: 0;
+}
+
+.smallCardTitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 10px;
+}
+
+/* Score card */
+.scoreRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.scoreValue {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.scorePill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(47, 124, 246, 0.12);
+    border: 1px solid rgba(47, 124, 246, 0.22);
+}
+
+.dots {
+    display: inline-flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+}
+
+.dotOn {
+    background: rgba(47, 124, 246, 0.95);
+}
+.dotOff {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.scoreLabel {
+    font-size: 12px;
+    color: rgba(120, 175, 255, 0.95);
+}
+
+/* Trend */
+.trendBox {
+    height: 72px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 6px;
+}
+
+.trendSvg {
+    width: 100%;
+    height: 48px;
+    color: rgba(47, 124, 246, 0.95);
+}
+
+.trendLabels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* Position */
+.posRow {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    gap: 12px;
+    align-items: center;
+}
+
+.posBars {
+    display: grid;
+    gap: 10px;
+}
+
+.posBarTrack {
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.posBarFill {
+    height: 100%;
+    border-radius: 999px;
+    background: rgba(47, 124, 246, 0.95);
+}
+
+.posLegend {
+    display: grid;
+    gap: 6px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.posLegendText {
+    white-space: nowrap;
+}
+
+/* Mid */
+.midGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.bigCard {
+    border-radius: 16px;
+    padding: 14px;
+    background: rgba(28, 36, 54, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    min-width: 0;
+}
+
+.bigCardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.bigCardTitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.iconUp {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    color: rgba(46, 204, 113, 0.95);
+    border: 1px solid rgba(46, 204, 113, 0.55);
+    background: rgba(46, 204, 113, 0.08);
+}
+
+.iconDown {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    color: rgba(245, 189, 66, 0.95);
+    border: 1px solid rgba(245, 189, 66, 0.55);
+    background: rgba(245, 189, 66, 0.1);
+}
+
+.factorList {
+    display: grid;
+    gap: 12px;
+}
+
+.factorRow {
+    display: grid;
+    grid-template-columns: 28px 1fr 52px;
+    gap: 10px;
+    align-items: center;
+}
+
+.rankGreen,
+.rankAmber {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rankGreen {
+    color: rgba(46, 204, 113, 0.95);
+    border: 1px solid rgba(46, 204, 113, 0.55);
+    background: rgba(46, 204, 113, 0.08);
+}
+
+.rankAmber {
+    color: rgba(245, 189, 66, 0.95);
+    border: 1px solid rgba(245, 189, 66, 0.55);
+    background: rgba(245, 189, 66, 0.1);
+}
+
+.factorMain {
+    min-width: 0;
+}
+
+.factorLabel {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.86);
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.factorBarTrack {
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.factorBarFillGreen {
+    height: 100%;
+    border-radius: 999px;
+    background: rgba(46, 204, 113, 0.85);
+}
+
+.factorBarFillAmber {
+    height: 100%;
+    border-radius: 999px;
+    background: rgba(245, 189, 66, 0.9);
+}
+
+.factorDelta {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+}
+
+.factorDeltaMuted {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: right;
+}
+
+/* Recommendations */
+.recoCard {
+    border-radius: 16px;
+    padding: 16px 14px;
+    background: rgba(28, 36, 54, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.recoHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.recoIcon {
+    color: rgba(46, 204, 113, 0.95);
+}
+
+.recoTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(46, 204, 113, 0.9);
+}
+
+.recoList {
+    display: grid;
+    gap: 14px;
+}
+
+.recoRow {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    gap: 14px;
+    align-items: center;
+    padding-top: 2px;
+    div {
+        text-align: left;
+    }
+}
+
+.recoHeadline {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+.recoBody {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.4;
+    margin-right: 150px;
+}
+
+.applyBtn {
+    height: 38px;
+    border-radius: 999px;
+    border: 0;
+    cursor: pointer;
+    background: rgba(46, 204, 113, 0.9);
+    color: rgba(10, 16, 26, 0.95);
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .shell {
+        grid-template-columns: 220px 1px 1fr;
+    }
+    .topGrid {
+        grid-template-columns: 1fr;
+    }
+    .posRow {
+        grid-template-columns: 1fr;
+    }
+    .midGrid {
+        grid-template-columns: 1fr;
+    }
+    .recoRow {
+        grid-template-columns: 1fr;
+    }
+}

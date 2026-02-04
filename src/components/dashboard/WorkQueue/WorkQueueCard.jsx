@@ -37,7 +37,7 @@ export default function WorkQueueCard() {
     const anchorRef = useRef(null);
 
     return (
-        <Card title="Work Queue" variant="dark">
+        <Card padding="md" title="Work Queue" variant="dark">
             <div className={styles.tabs}>
                 {tabs.map((t) => (
                     <button

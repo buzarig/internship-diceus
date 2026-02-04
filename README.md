@@ -20,7 +20,7 @@ All UI components were implemented manually without using third-party UI librari
 ---
 
 ### AI Tools Used
-- **ChatGPT (GPT-4)** — used for:
+- **ChatGPT (GPT-5)** — used for:
   - Component architecture planning
   - Layout and CSS troubleshooting
   - Refactoring and optimization suggestions

@@ -13,7 +13,6 @@ export default function Popover({
     const panelRef = useRef(null);
     const [posStyle, setPosStyle] = useState(null);
 
-    // закрытие по Escape + клик вне
     useEffect(() => {
         if (!isOpen) return;
 
@@ -43,7 +42,6 @@ export default function Popover({
         };
     }, [isOpen, onClose, anchorRef]);
 
-    // позиционирование (ТОЛЬКО вне render)
     useEffect(() => {
         if (!isOpen) return;
 
@@ -57,9 +55,8 @@ export default function Popover({
 
         updatePosition();
 
-        // обновляем на скролле/ресайзе
         window.addEventListener('resize', updatePosition);
-        window.addEventListener('scroll', updatePosition, true); // true — ловим скроллы вложенных контейнеров
+        window.addEventListener('scroll', updatePosition, true);
 
         return () => {
             window.removeEventListener('resize', updatePosition);

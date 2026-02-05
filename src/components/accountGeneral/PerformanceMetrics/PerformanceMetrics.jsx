@@ -9,7 +9,6 @@ export default function PerformanceMetrics({ data }) {
             <h2 className={styles.h2}>Performance Metrics</h2>
 
             <div className={styles.grid}>
-                {/* Winnability */}
                 <Card variant="dark" title={null}>
                     <div className={styles.cardPad}>
                         <div className={styles.cardTop}>
@@ -29,7 +28,6 @@ export default function PerformanceMetrics({ data }) {
                     </div>
                 </Card>
 
-                {/* Loss Ratio */}
                 <Card variant="dark" title={null}>
                     <div className={styles.cardPad}>
                         <div className={styles.title}>{m.lossRatio.title}</div>
@@ -49,7 +47,6 @@ export default function PerformanceMetrics({ data }) {
                     </div>
                 </Card>
 
-                {/* Premium Growth */}
                 <Card variant="dark" title={null}>
                     <div className={styles.cardPad}>
                         <div className={styles.title}>
@@ -75,7 +72,6 @@ export default function PerformanceMetrics({ data }) {
                     </div>
                 </Card>
 
-                {/* Exposure Distribution */}
                 <Card variant="dark" title={null}>
                     <div className={styles.cardPad}>
                         <div className={styles.title}>{m.exposure.title}</div>

@@ -7,13 +7,11 @@
     align-items: stretch;
 }
 
-/* ВАЖНО для растяжения в grid */
 .grid > * {
     width: 100%;
     min-width: 0;
 }
 
-/* OUTER CARD */
 .card {
     width: 100%;
     border-radius: 18px;
@@ -45,7 +43,6 @@
     color: rgba(47, 124, 246, 0.95);
 }
 
-/* INNER PANEL */
 .inner {
     width: 100%;
     border-radius: 16px;
@@ -54,7 +51,6 @@
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* -------------------- STEPPER -------------------- */
 .stepper {
     position: relative;
     display: flex;
@@ -84,7 +80,7 @@
 
 .dot {
     position: relative;
-    z-index: 2; /* ВАЖНО: выше линии */
+    z-index: 2;
 
     width: 28px;
     height: 28px;
@@ -92,17 +88,13 @@
     display: grid;
     place-items: center;
 
-    /* ❌ было полупрозрачное */
-    /* background: rgba(16, 185, 129, 0.08); */
-
-    /* ✅ делаем плотный фон */
-    background: rgba(28, 36, 54, 1); /* тот же цвет, что inner */
+    background: rgba(28, 36, 54, 1);
     border: 2px solid rgba(16, 185, 129, 0.7);
     color: rgba(16, 185, 129, 0.95);
 }
 
 .dotLast {
-    background: rgba(28, 36, 54, 1); /* тот же цвет, что inner */
+    background: rgba(28, 36, 54, 1);
 
     border: 2px dashed rgba(255, 255, 255, 0.35);
     color: rgba(255, 255, 255, 0.55);
@@ -121,7 +113,6 @@
     white-space: nowrap;
 }
 
-/* -------------------- COMPLIANCE -------------------- */
 .complianceGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -157,7 +148,6 @@
     color: rgba(255, 255, 255, 0.82);
 }
 
-/* -------------------- RESPONSIVE -------------------- */
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr;

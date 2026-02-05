@@ -147,7 +147,6 @@
     color: rgba(255, 255, 255, 0.92);
 }
 
-/* tablet */
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr 1fr;
@@ -161,7 +160,6 @@
     }
 }
 
-/* mobile */
 @media (max-width: 640px) {
     .grid {
         grid-template-columns: 1fr;

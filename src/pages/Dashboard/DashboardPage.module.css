@@ -7,29 +7,24 @@
 .topGrid {
     display: grid;
 
-    /* 3 колонки как на макете */
     grid-template-columns: 2.8fr 0.85fr 0.85fr;
 
-    /* 2 строки: справа Quick сверху, Market снизу */
     grid-template-rows: 1fr 1fr;
 
     gap: 16px;
     align-items: stretch;
 }
 
-/* WorkQueue высокий = 2 строки */
 .workQueue {
     grid-column: 1;
     grid-row: 1 / span 2;
 }
 
-/* PortfolioGoals высокий = 2 строки (между WorkQueue и правым стеком) */
 .portfolioGoals {
     grid-column: 2;
     grid-row: 1 / span 2;
 }
 
-/* Правый столбец: Quick сверху, Market снизу */
 .quickActions {
     grid-column: 3;
     grid-row: 1;
@@ -44,15 +39,13 @@
     width: 100%;
 }
 
-/* tablet: все в одну колонку */
 @media (max-width: 1280px) {
     .topGrid {
-        grid-template-columns: 2.2fr 1fr 1fr; /* чуть ужимаем левую колонку */
+        grid-template-columns: 2.2fr 1fr 1fr;
         gap: 14px;
     }
 }
 
-/* ===== <=1024 (tablet) ===== */
 @media (max-width: 1024px) {
     .topGrid {
         grid-template-columns: 1fr;
@@ -87,7 +80,6 @@
     }
 }
 
-/* ===== <=768 (mobile) ===== */
 @media (max-width: 768px) {
     .page {
         gap: 12px;

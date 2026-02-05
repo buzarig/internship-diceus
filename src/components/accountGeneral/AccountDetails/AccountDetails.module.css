@@ -16,7 +16,6 @@
     align-items: stretch;
 }
 
-/* LEFT */
 .aside {
     min-width: 0;
 }
@@ -79,13 +78,11 @@
     background: rgba(47, 124, 246, 0.1);
 }
 
-/* Divider */
 .divider {
     width: 1px;
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* RIGHT */
 .content {
     min-width: 0;
 }
@@ -101,7 +98,6 @@
     color: rgba(255, 255, 255, 0.92);
 }
 
-/* Top grid */
 .topGrid {
     display: grid;
     grid-template-columns: 260px 260px 1fr;
@@ -123,7 +119,6 @@
     margin-bottom: 10px;
 }
 
-/* Score card */
 .scoreRow {
     display: flex;
     align-items: center;
@@ -170,7 +165,6 @@
     color: rgba(120, 175, 255, 0.95);
 }
 
-/* Trend */
 .trendBox {
     height: 72px;
     display: grid;
@@ -191,7 +185,6 @@
     color: rgba(255, 255, 255, 0.55);
 }
 
-/* Position */
 .posRow {
     display: grid;
     grid-template-columns: 1fr 160px;
@@ -228,7 +221,6 @@
     white-space: nowrap;
 }
 
-/* Mid */
 .midGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -358,7 +350,6 @@
     text-align: right;
 }
 
-/* Recommendations */
 .recoCard {
     border-radius: 16px;
     padding: 16px 14px;
@@ -423,7 +414,6 @@
     font-weight: 700;
 }
 
-/* Responsive */
 @media (max-width: 1100px) {
     .shell {
         grid-template-columns: 220px 1px 1fr;

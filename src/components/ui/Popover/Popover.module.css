@@ -1,9 +1,8 @@
-/* отдельный слой, чтобы popover был всегда поверх */
 .portalLayer {
     position: fixed;
     inset: 0;
-    z-index: 9999; /* выше таблиц и карточек */
-    pointer-events: none; /* клики проходят, кроме самого поповера */
+    z-index: 9999;
+    pointer-events: none;
 }
 
 .popover {

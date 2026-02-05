@@ -6,7 +6,6 @@ export default function AccountStatusCompliance({ data }) {
 
     return (
         <div className={styles.grid}>
-            {/* LEFT */}
             <div className={styles.card}>
                 <div className={styles.header}>
                     <h3 className={styles.title}>Account Status</h3>
@@ -56,7 +55,6 @@ export default function AccountStatusCompliance({ data }) {
                 </div>
             </div>
 
-            {/* RIGHT */}
             <div className={styles.card}>
                 <div className={styles.header}>
                     <h3 className={styles.title}>

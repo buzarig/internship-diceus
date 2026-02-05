@@ -45,7 +45,6 @@ body {
     min-height: 100%;
 }
 
-/* декоративный фон как на макете */
 body::before {
     content: '';
     position: fixed;
@@ -53,22 +52,19 @@ body::before {
     z-index: -2;
 
     background:
-    /* мягкая подсветка сверху слева */
         radial-gradient(
             900px 380px at 18% 0%,
             rgba(47, 124, 246, 0.22) 0%,
             rgba(47, 124, 246, 0) 60%
         ),
-        /* очень плавный вертикальный градиент (как в фигме) */
         linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.06) 0%,
-                rgba(18, 22, 34, 0) 40%,
-                rgba(18, 22, 34, 0.65) 100%
-            );
+            180deg,
+            rgba(255, 255, 255, 0.06) 0%,
+            rgba(18, 22, 34, 0) 40%,
+            rgba(18, 22, 34, 0.65) 100%
+        );
 }
 
-/* лёгкая "дымка/шум" */
 body::after {
     content: '';
     position: fixed;

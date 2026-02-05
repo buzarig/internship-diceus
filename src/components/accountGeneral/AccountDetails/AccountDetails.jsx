@@ -12,7 +12,6 @@ export default function AccountDetails({ data }) {
     return (
         <section className={styles.section}>
             <div className={styles.shell}>
-                {/* LEFT MENU */}
                 <aside className={styles.aside}>
                     {menu.map((group) => (
                         <div key={group.title} className={styles.group}>
@@ -47,15 +46,12 @@ export default function AccountDetails({ data }) {
 
                 <div className={styles.divider} aria-hidden="true" />
 
-                {/* RIGHT CONTENT */}
                 <div className={styles.content}>
                     <div className={styles.pageTitleRow}>
                         <h2 className={styles.pageTitle}>Winnability</h2>
                     </div>
 
-                    {/* TOP CARDS */}
                     <div className={styles.topGrid}>
-                        {/* Overall Score */}
                         <div className={styles.smallCard}>
                             <div className={styles.smallCardTitle}>
                                 Overall Score
@@ -91,7 +87,6 @@ export default function AccountDetails({ data }) {
                             </div>
                         </div>
 
-                        {/* Historical trend */}
                         <div className={styles.smallCard}>
                             <div className={styles.smallCardTitle}>
                                 Historical trend
@@ -124,7 +119,6 @@ export default function AccountDetails({ data }) {
                             </div>
                         </div>
 
-                        {/* Position */}
                         <div className={styles.smallCard}>
                             <div className={styles.smallCardTitle}>
                                 Position
@@ -169,9 +163,7 @@ export default function AccountDetails({ data }) {
                         </div>
                     </div>
 
-                    {/* MID CARDS */}
                     <div className={styles.midGrid}>
-                        {/* Increasing */}
                         <div className={styles.bigCard}>
                             <div className={styles.bigCardHeader}>
                                 <span
@@ -223,7 +215,6 @@ export default function AccountDetails({ data }) {
                             </div>
                         </div>
 
-                        {/* Decreasing */}
                         <div className={styles.bigCard}>
                             <div className={styles.bigCardHeader}>
                                 <span
@@ -278,7 +269,6 @@ export default function AccountDetails({ data }) {
                         </div>
                     </div>
 
-                    {/* AI Recommendations */}
                     <div className={styles.recoCard}>
                         <div className={styles.recoHeader}>
                             <span

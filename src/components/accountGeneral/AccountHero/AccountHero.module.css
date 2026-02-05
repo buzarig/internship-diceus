@@ -67,7 +67,7 @@
 }
 
 .addr {
-    max-width: 190px; /* под макет */
+    max-width: 190px;
     font-size: 14px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 1);
@@ -109,7 +109,6 @@
     color: rgba(255, 255, 255, 0.86);
 }
 
-/* RIGHT: Needs Attention */
 .attnBox {
     border: 1px solid rgba(245, 197, 66, 0.55);
     border-radius: 14px;
@@ -168,7 +167,6 @@
     align-items: flex-start;
 }
 
-/* tablet */
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr;
@@ -180,7 +178,7 @@
 
     .meta {
         grid-column: 1 / -1;
-        margin-left: 82px; /* чтобы начать под текстом рядом с лого */
+        margin-left: 82px;
         margin-top: 8px;
         flex-wrap: wrap;
     }

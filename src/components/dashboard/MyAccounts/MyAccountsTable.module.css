@@ -70,18 +70,18 @@ div {
 .row {
     display: grid;
     grid-template-columns:
-        190px /* account */
-        120px /* line */
-        120px /* broker */
-        120px /* renewal */
-        90px /* premium */
-        110px /* rated */
-        90px /* loss ratio */
-        100px /* appetite */
-        140px /* status */
-        80px /* triage */
-        135px /* winnability */
-        44px; /* more */
+        190px
+        120px
+        120px
+        120px
+        90px
+        110px
+        90px
+        100px
+        140px
+        80px
+        135px
+        44px;
 
     align-items: center;
     padding: 12px 8px;
@@ -90,7 +90,7 @@ div {
 }
 
 .row > div {
-    min-width: 0; /* позволяет тексту ужиматься и не ломать колонки */
+    min-width: 0;
 }
 
 .head {
@@ -272,7 +272,7 @@ div {
     display: flex;
     align-items: center;
     gap: 16px;
-    flex-wrap: wrap; /* на узких переносится красиво */
+    flex-wrap: wrap;
 }
 
 .headerTitle {
@@ -296,18 +296,18 @@ div {
 
 .pillWide {
     height: 26px;
-    min-width: 92px; /* чтобы было “полноразмерно” */
+    min-width: 92px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0 12px; /* убираем вертикальные */
+    padding: 0 12px;
     text-align: center;
 }
 
 .cellWin {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* слева */
+    justify-content: flex-start;
 }
 
 .winBox {
@@ -319,7 +319,7 @@ div {
     padding: 0 10px;
     border-radius: 999px;
 
-    border: 1px solid rgba(47, 124, 246, 0.35); /* как в макете */
+    border: 1px solid rgba(47, 124, 246, 0.35);
     background: transparent;
 }
 
@@ -349,7 +349,7 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 12px; /* по центру */
+    padding-right: 12px;
 }
 
 @media (max-width: 1280px) {

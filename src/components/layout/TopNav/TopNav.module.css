@@ -99,7 +99,7 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 6px;
-        max-width: calc(100vw - 140px); /* оставляем место под стрелки */
+        max-width: calc(100vw - 140px);
     }
 
     .left::-webkit-scrollbar {

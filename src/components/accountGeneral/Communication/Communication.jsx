@@ -23,7 +23,6 @@ export default function Communication({ data }) {
             </div>
 
             <div className={styles.grid}>
-                {/* LEFT */}
                 <div className={styles.col}>
                     {left.map((item, idx) => (
                         <article
@@ -80,7 +79,6 @@ export default function Communication({ data }) {
                     ))}
                 </div>
 
-                {/* RIGHT */}
                 <div className={styles.col}>
                     {right.map((item, idx) => (
                         <article

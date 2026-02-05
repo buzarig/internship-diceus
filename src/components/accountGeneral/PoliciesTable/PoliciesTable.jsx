@@ -80,7 +80,6 @@ export default function PoliciesTable({ data }) {
                 <div className={styles.tableWrapper}>
                     {filtered.map((r) => (
                         <div key={r.id} className={styles.row}>
-                            {/* LINE */}
                             <div className={styles.lineCell}>
                                 <span
                                     className={`${styles.lineIcon} ${
@@ -100,7 +99,6 @@ export default function PoliciesTable({ data }) {
                             </div>
                             <div className={styles.muted}>{r.effDate}</div>
                             <div className={styles.muted}>{r.expDate}</div>
-                            {/* STATUS */}
                             <div className={styles.status}>
                                 <span
                                     className={`${styles.dot} ${
@@ -121,7 +119,6 @@ export default function PoliciesTable({ data }) {
                             <div className={styles.strong}>
                                 {r.renewalPremium}
                             </div>
-                            {/* RATE CHANGE */}
                             <div
                                 className={`${styles.muted} ${
                                     r.rateChangeColor === 'red'
@@ -133,7 +130,6 @@ export default function PoliciesTable({ data }) {
                             >
                                 {r.rateChange ?? 'N/A'}
                             </div>
-                            {/* LOSS RATIO */}
                             <div className={styles.loss}>
                                 {r.lossRatio == null ? (
                                     <span className={styles.muted}>N/A</span>
@@ -147,14 +143,12 @@ export default function PoliciesTable({ data }) {
                                     </span>
                                 )}
                             </div>
-                            {/* MENU */}
                             <div className={styles.more}>
                                 <MoreMenu />
                             </div>
                         </div>
                     ))}
 
-                    {/* TOTAL ROW */}
                     {total ? (
                         <div className={`${styles.row} ${styles.total}`}>
                             <div />

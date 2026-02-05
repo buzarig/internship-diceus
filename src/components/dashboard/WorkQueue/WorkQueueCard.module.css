@@ -6,7 +6,7 @@
 
 .tab {
     border: none;
-    background: rgba(12, 15, 23, 1); /* темнее */
+    background: rgba(12, 15, 23, 1);
     color: rgba(255, 255, 255, 0.82);
     padding: 6px 12px;
     border-radius: 999px;
@@ -154,7 +154,7 @@
     }
 
     .row {
-        min-width: 760px; /* чтобы колонки не ломались */
+        min-width: 760px;
     }
 }
 

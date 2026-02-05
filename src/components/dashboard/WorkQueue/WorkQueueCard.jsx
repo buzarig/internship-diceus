@@ -19,7 +19,6 @@ export default function WorkQueueCard() {
 
     const [activeTab, setActiveTab] = useState(tabsBase[0]?.key ?? 'assigned');
 
-    // считаем счетчики из данных
     const tabs = useMemo(() => {
         return tabsBase.map((t) => ({
             ...t,
@@ -27,12 +26,10 @@ export default function WorkQueueCard() {
         }));
     }, [tabsBase, allRows]);
 
-    // фильтруем строки по активному табу
     const rows = useMemo(() => {
         return allRows.filter((r) => r.tab === activeTab);
     }, [allRows, activeTab]);
 
-    // один popover на таблицу
     const [openRowId, setOpenRowId] = useState(null);
     const anchorRef = useRef(null);
 

@@ -5,7 +5,6 @@ import logo from '../../../assets/images/maritime-logo.png';
 export default function AccountHero({ account, needsAttention }) {
     return (
         <div className={styles.grid}>
-            {/* LEFT side */}
             <div className={styles.left}>
                 <div className={styles.topRow}>
                     <div className={styles.logoWrap} aria-hidden="true">
@@ -51,7 +50,6 @@ export default function AccountHero({ account, needsAttention }) {
                 </div>
             </div>
 
-            {/* RIGHT side */}
             <Card padding="none" variant="dark" title={null}>
                 <div className={styles.attnBox}>
                     <div className={styles.attnTitle}>
